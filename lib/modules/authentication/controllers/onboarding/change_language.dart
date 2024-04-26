@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ChangeLanguageController extends GetxController {
@@ -7,5 +8,6 @@ class ChangeLanguageController extends GetxController {
   void changeLanguage(String language){
     print(language);
     locale.value = language;
+    Get.updateLocale(Locale(language));
   }
 }

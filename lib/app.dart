@@ -33,8 +33,9 @@ class App extends StatelessWidget {
       ],
       // locale: const Locale('es', ''),
       // locale: const Locale('en', ''),
+      locale: Locale(changeLanguageController.locale.value)
     
-      locale: changeLanguageController.locale.value == 'es' ? const Locale('en') : const Locale('es'),
+      // locale: changeLanguageController.locale.value == 'es' ? const Locale('en', '') : const Locale('es', ''),
       // >> flutter gen-l10n
     );
   }
